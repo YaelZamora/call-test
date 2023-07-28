@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7EC977A42A74247000F67AE3 /* AIAEC in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC977A32A74247000F67AE3 /* AIAEC */; };
+		7EC977A62A74247000F67AE3 /* AINS in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC977A52A74247000F67AE3 /* AINS */; };
+		7EC977A82A74247000F67AE3 /* AudioBeauty in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC977A72A74247000F67AE3 /* AudioBeauty */; };
+		7EC977AA2A74247000F67AE3 /* ClearVision in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC977A92A74247000F67AE3 /* ClearVision */; };
+		7EC977AC2A74247000F67AE3 /* ContentInspect in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC977AB2A74247000F67AE3 /* ContentInspect */; };
+		7EC977AE2A74247000F67AE3 /* DRM in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC977AD2A74247000F67AE3 /* DRM */; };
+		7EC977B02A74247000F67AE3 /* FaceDetection in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC977AF2A74247000F67AE3 /* FaceDetection */; };
+		7EC977B22A74247000F67AE3 /* ReplayKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC977B12A74247000F67AE3 /* ReplayKit */; };
+		7EC977B42A74247000F67AE3 /* RtcBasic in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC977B32A74247000F67AE3 /* RtcBasic */; };
+		7EC977B62A74247000F67AE3 /* SpatialAudio in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC977B52A74247000F67AE3 /* SpatialAudio */; };
+		7EC977B82A74247000F67AE3 /* VQA in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC977B72A74247000F67AE3 /* VQA */; };
+		7EC977BA2A74247000F67AE3 /* VideoCodecDec in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC977B92A74247000F67AE3 /* VideoCodecDec */; };
+		7EC977BC2A74247000F67AE3 /* VideoCodecEnc in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC977BB2A74247000F67AE3 /* VideoCodecEnc */; };
+		7EC977BE2A74247000F67AE3 /* VirtualBackground in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC977BD2A74247000F67AE3 /* VirtualBackground */; };
+		7EC977C12A74256B00F67AE3 /* AgoraAppGroupDataHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC977C02A74256B00F67AE3 /* AgoraAppGroupDataHelper */; };
+		7EC977C32A74256B00F67AE3 /* AgoraBroadcastExtensionHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC977C22A74256B00F67AE3 /* AgoraBroadcastExtensionHelper */; };
+		7EC977C52A74256B00F67AE3 /* AgoraUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC977C42A74256B00F67AE3 /* AgoraUIKit */; };
 		7EF0C11C2A70BE0C005C78F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF0C11B2A70BE0C005C78F0 /* AppDelegate.swift */; };
 		7EF0C11E2A70BE0C005C78F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF0C11D2A70BE0C005C78F0 /* SceneDelegate.swift */; };
 		7EF0C1202A70BE0C005C78F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF0C11F2A70BE0C005C78F0 /* ViewController.swift */; };
@@ -31,6 +48,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EC977C12A74256B00F67AE3 /* AgoraAppGroupDataHelper in Frameworks */,
+				7EC977AE2A74247000F67AE3 /* DRM in Frameworks */,
+				7EC977BC2A74247000F67AE3 /* VideoCodecEnc in Frameworks */,
+				7EC977A82A74247000F67AE3 /* AudioBeauty in Frameworks */,
+				7EC977B82A74247000F67AE3 /* VQA in Frameworks */,
+				7EC977B42A74247000F67AE3 /* RtcBasic in Frameworks */,
+				7EC977B02A74247000F67AE3 /* FaceDetection in Frameworks */,
+				7EC977C32A74256B00F67AE3 /* AgoraBroadcastExtensionHelper in Frameworks */,
+				7EC977AC2A74247000F67AE3 /* ContentInspect in Frameworks */,
+				7EC977BA2A74247000F67AE3 /* VideoCodecDec in Frameworks */,
+				7EC977BE2A74247000F67AE3 /* VirtualBackground in Frameworks */,
+				7EC977A42A74247000F67AE3 /* AIAEC in Frameworks */,
+				7EC977C52A74256B00F67AE3 /* AgoraUIKit in Frameworks */,
+				7EC977AA2A74247000F67AE3 /* ClearVision in Frameworks */,
+				7EC977B22A74247000F67AE3 /* ReplayKit in Frameworks */,
+				7EC977B62A74247000F67AE3 /* SpatialAudio in Frameworks */,
+				7EC977A62A74247000F67AE3 /* AINS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +117,25 @@
 			dependencies = (
 			);
 			name = call;
+			packageProductDependencies = (
+				7EC977A32A74247000F67AE3 /* AIAEC */,
+				7EC977A52A74247000F67AE3 /* AINS */,
+				7EC977A72A74247000F67AE3 /* AudioBeauty */,
+				7EC977A92A74247000F67AE3 /* ClearVision */,
+				7EC977AB2A74247000F67AE3 /* ContentInspect */,
+				7EC977AD2A74247000F67AE3 /* DRM */,
+				7EC977AF2A74247000F67AE3 /* FaceDetection */,
+				7EC977B12A74247000F67AE3 /* ReplayKit */,
+				7EC977B32A74247000F67AE3 /* RtcBasic */,
+				7EC977B52A74247000F67AE3 /* SpatialAudio */,
+				7EC977B72A74247000F67AE3 /* VQA */,
+				7EC977B92A74247000F67AE3 /* VideoCodecDec */,
+				7EC977BB2A74247000F67AE3 /* VideoCodecEnc */,
+				7EC977BD2A74247000F67AE3 /* VirtualBackground */,
+				7EC977C02A74256B00F67AE3 /* AgoraAppGroupDataHelper */,
+				7EC977C22A74256B00F67AE3 /* AgoraBroadcastExtensionHelper */,
+				7EC977C42A74256B00F67AE3 /* AgoraUIKit */,
+			);
 			productName = call;
 			productReference = 7EF0C1182A70BE0C005C78F0 /* call.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +164,10 @@
 				Base,
 			);
 			mainGroup = 7EF0C10F2A70BE0C005C78F0;
+			packageReferences = (
+				7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */,
+				7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */,
+			);
 			productRefGroup = 7EF0C1192A70BE0C005C78F0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -289,6 +346,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = call/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Quiero verte";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Quiero oirte";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -316,6 +375,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = call/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Quiero verte";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Quiero oirte";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -356,6 +417,113 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AgoraIO/AgoraRtcEngine_iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AgoraIO-Community/VideoUIKit-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7EC977A32A74247000F67AE3 /* AIAEC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = AIAEC;
+		};
+		7EC977A52A74247000F67AE3 /* AINS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = AINS;
+		};
+		7EC977A72A74247000F67AE3 /* AudioBeauty */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = AudioBeauty;
+		};
+		7EC977A92A74247000F67AE3 /* ClearVision */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = ClearVision;
+		};
+		7EC977AB2A74247000F67AE3 /* ContentInspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = ContentInspect;
+		};
+		7EC977AD2A74247000F67AE3 /* DRM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = DRM;
+		};
+		7EC977AF2A74247000F67AE3 /* FaceDetection */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = FaceDetection;
+		};
+		7EC977B12A74247000F67AE3 /* ReplayKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = ReplayKit;
+		};
+		7EC977B32A74247000F67AE3 /* RtcBasic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = RtcBasic;
+		};
+		7EC977B52A74247000F67AE3 /* SpatialAudio */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = SpatialAudio;
+		};
+		7EC977B72A74247000F67AE3 /* VQA */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = VQA;
+		};
+		7EC977B92A74247000F67AE3 /* VideoCodecDec */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = VideoCodecDec;
+		};
+		7EC977BB2A74247000F67AE3 /* VideoCodecEnc */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = VideoCodecEnc;
+		};
+		7EC977BD2A74247000F67AE3 /* VirtualBackground */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = VirtualBackground;
+		};
+		7EC977C02A74256B00F67AE3 /* AgoraAppGroupDataHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */;
+			productName = AgoraAppGroupDataHelper;
+		};
+		7EC977C22A74256B00F67AE3 /* AgoraBroadcastExtensionHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */;
+			productName = AgoraBroadcastExtensionHelper;
+		};
+		7EC977C42A74256B00F67AE3 /* AgoraUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */;
+			productName = AgoraUIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7EF0C1102A70BE0C005C78F0 /* Project object */;
 }
