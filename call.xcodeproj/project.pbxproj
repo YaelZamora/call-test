@@ -165,8 +165,8 @@
 			);
 			mainGroup = 7EF0C10F2A70BE0C005C78F0;
 			packageReferences = (
-				7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */,
-				7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */,
+				7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */,
+				7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS.git" */,
 			);
 			productRefGroup = 7EF0C1192A70BE0C005C78F0 /* Products */;
 			projectDirPath = "";
@@ -419,7 +419,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */ = {
+		7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AgoraIO/AgoraRtcEngine_iOS.git";
 			requirement = {
@@ -427,7 +427,7 @@
 				minimumVersion = 4.0.0;
 			};
 		};
-		7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */ = {
+		7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AgoraIO-Community/VideoUIKit-iOS.git";
 			requirement = {
@@ -440,87 +440,87 @@
 /* Begin XCSwiftPackageProductDependency section */
 		7EC977A32A74247000F67AE3 /* AIAEC */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
 			productName = AIAEC;
 		};
 		7EC977A52A74247000F67AE3 /* AINS */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
 			productName = AINS;
 		};
 		7EC977A72A74247000F67AE3 /* AudioBeauty */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
 			productName = AudioBeauty;
 		};
 		7EC977A92A74247000F67AE3 /* ClearVision */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
 			productName = ClearVision;
 		};
 		7EC977AB2A74247000F67AE3 /* ContentInspect */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
 			productName = ContentInspect;
 		};
 		7EC977AD2A74247000F67AE3 /* DRM */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
 			productName = DRM;
 		};
 		7EC977AF2A74247000F67AE3 /* FaceDetection */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
 			productName = FaceDetection;
 		};
 		7EC977B12A74247000F67AE3 /* ReplayKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
 			productName = ReplayKit;
 		};
 		7EC977B32A74247000F67AE3 /* RtcBasic */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
 			productName = RtcBasic;
 		};
 		7EC977B52A74247000F67AE3 /* SpatialAudio */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
 			productName = SpatialAudio;
 		};
 		7EC977B72A74247000F67AE3 /* VQA */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
 			productName = VQA;
 		};
 		7EC977B92A74247000F67AE3 /* VideoCodecDec */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
 			productName = VideoCodecDec;
 		};
 		7EC977BB2A74247000F67AE3 /* VideoCodecEnc */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
 			productName = VideoCodecEnc;
 		};
 		7EC977BD2A74247000F67AE3 /* VirtualBackground */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
 			productName = VirtualBackground;
 		};
 		7EC977C02A74256B00F67AE3 /* AgoraAppGroupDataHelper */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */;
+			package = 7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS.git" */;
 			productName = AgoraAppGroupDataHelper;
 		};
 		7EC977C22A74256B00F67AE3 /* AgoraBroadcastExtensionHelper */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */;
+			package = 7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS.git" */;
 			productName = AgoraBroadcastExtensionHelper;
 		};
 		7EC977C42A74256B00F67AE3 /* AgoraUIKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */;
+			package = 7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS.git" */;
 			productName = AgoraUIKit;
 		};
 /* End XCSwiftPackageProductDependency section */
