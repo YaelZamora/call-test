@@ -165,8 +165,8 @@
 			);
 			mainGroup = 7EF0C10F2A70BE0C005C78F0;
 			packageReferences = (
-				7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */,
-				7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS.git" */,
+				7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */,
+				7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */,
 			);
 			productRefGroup = 7EF0C1192A70BE0C005C78F0 /* Products */;
 			projectDirPath = "";
@@ -344,6 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VP5MJD3LR4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = call/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Quiero verte";
@@ -353,12 +354,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = yaelzamora.call;
+				PRODUCT_BUNDLE_IDENTIFIER = iOSLab.call;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -373,6 +375,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VP5MJD3LR4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = call/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Quiero verte";
@@ -382,12 +385,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = yaelzamora.call;
+				PRODUCT_BUNDLE_IDENTIFIER = iOSLab.call;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -419,7 +423,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */ = {
+		7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AgoraIO/AgoraRtcEngine_iOS.git";
 			requirement = {
@@ -427,7 +431,7 @@
 				minimumVersion = 4.0.0;
 			};
 		};
-		7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS.git" */ = {
+		7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AgoraIO-Community/VideoUIKit-iOS.git";
 			requirement = {
@@ -440,87 +444,87 @@
 /* Begin XCSwiftPackageProductDependency section */
 		7EC977A32A74247000F67AE3 /* AIAEC */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
 			productName = AIAEC;
 		};
 		7EC977A52A74247000F67AE3 /* AINS */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
 			productName = AINS;
 		};
 		7EC977A72A74247000F67AE3 /* AudioBeauty */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
 			productName = AudioBeauty;
 		};
 		7EC977A92A74247000F67AE3 /* ClearVision */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
 			productName = ClearVision;
 		};
 		7EC977AB2A74247000F67AE3 /* ContentInspect */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
 			productName = ContentInspect;
 		};
 		7EC977AD2A74247000F67AE3 /* DRM */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
 			productName = DRM;
 		};
 		7EC977AF2A74247000F67AE3 /* FaceDetection */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
 			productName = FaceDetection;
 		};
 		7EC977B12A74247000F67AE3 /* ReplayKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
 			productName = ReplayKit;
 		};
 		7EC977B32A74247000F67AE3 /* RtcBasic */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
 			productName = RtcBasic;
 		};
 		7EC977B52A74247000F67AE3 /* SpatialAudio */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
 			productName = SpatialAudio;
 		};
 		7EC977B72A74247000F67AE3 /* VQA */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
 			productName = VQA;
 		};
 		7EC977B92A74247000F67AE3 /* VideoCodecDec */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
 			productName = VideoCodecDec;
 		};
 		7EC977BB2A74247000F67AE3 /* VideoCodecEnc */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
 			productName = VideoCodecEnc;
 		};
 		7EC977BD2A74247000F67AE3 /* VirtualBackground */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS.git" */;
+			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
 			productName = VirtualBackground;
 		};
 		7EC977C02A74256B00F67AE3 /* AgoraAppGroupDataHelper */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS.git" */;
+			package = 7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */;
 			productName = AgoraAppGroupDataHelper;
 		};
 		7EC977C22A74256B00F67AE3 /* AgoraBroadcastExtensionHelper */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS.git" */;
+			package = 7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */;
 			productName = AgoraBroadcastExtensionHelper;
 		};
 		7EC977C42A74256B00F67AE3 /* AgoraUIKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS.git" */;
+			package = 7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */;
 			productName = AgoraUIKit;
 		};
 /* End XCSwiftPackageProductDependency section */
