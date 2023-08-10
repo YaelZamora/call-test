@@ -8,6 +8,7 @@
 import UIKit
 import AVFoundation
 import AgoraRtcKit
+import Drawsana
 
 class ViewController: UIViewController, AgoraRtcEngineDelegate {
     // The video feed for the local user is displayed here
@@ -28,7 +29,11 @@ class ViewController: UIViewController, AgoraRtcEngineDelegate {
     var token = "007eJxTYHjxesY6w/2is/dv7L6SNtup6vD1BXfV6ufMm/fI/kEGe/NZBYbUxERjC2NLg+Q0w1ST5BTDxKRUS8PUVEOLRBNTYyNTg6bcKykNgYwMXIwnmBkZIBDE52bwySxLdc5IzMtLzWFgAABYqyTl"
     // Update with the channel name you used to generate the token in Agora Console.
     var channelName = "LiveChannel"
-
+    
+    // MARK: Drawsana constants
+    let drawsanaView = DrawsanaView()
+    let penTool = PenTool()
+    var imageView = UIImage()
 
     // Track if the local user is in a call
     var joined: Bool = false {
@@ -41,11 +46,33 @@ class ViewController: UIViewController, AgoraRtcEngineDelegate {
 
     override func viewDidLoad() {
          super.viewDidLoad()
-         // Do any additional setup after loading the view.
          // Initializes the video view
          initViews()
          // The following functions are used when calling Agora APIs
          initializeAgoraEngine()
+        
+        //MARK: Drawsana settings
+        drawsanaView.set(tool: penTool)
+        drawsanaView.userSettings.strokeWidth = 5
+        drawsanaView.userSettings.strokeColor = .blue
+        drawsanaView.userSettings.fillColor = .yellow
+        drawsanaView.userSettings.fontSize = 24
+        drawsanaView.userSettings.fontName = "Marker Felt"
+        
+        //MARK: Drawsana Functions
+        func save() {
+            let jsonEncoder = JSONEncoder()
+            jsonEncoder.outputFormatting = [.prettyPrinted, .sortedKeys]
+            let jsonData = try! jsonEncoder.encode(drawsanaView.drawing)
+            // store jsonData somewhere
+          }
+         
+          func load() {}
+         
+          func showFinalImage() {
+              imageView = drawsanaView.render()!
+          }
+        //MARK: End of Drawsana Functions
     }
 
     override func viewDidDisappear(_ animated: Bool) {

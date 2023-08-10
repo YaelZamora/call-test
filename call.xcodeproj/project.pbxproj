@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E059DC82A852FF500088252 /* Drawsana in Frameworks */ = {isa = PBXBuildFile; productRef = 7E059DC72A852FF500088252 /* Drawsana */; };
+		7E059DCA2A85329300088252 /* DrawController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E059DC92A85329300088252 /* DrawController.swift */; };
 		7EC977A42A74247000F67AE3 /* AIAEC in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC977A32A74247000F67AE3 /* AIAEC */; };
 		7EC977A62A74247000F67AE3 /* AINS in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC977A52A74247000F67AE3 /* AINS */; };
 		7EC977A82A74247000F67AE3 /* AudioBeauty in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC977A72A74247000F67AE3 /* AudioBeauty */; };
@@ -33,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E059DC92A85329300088252 /* DrawController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawController.swift; sourceTree = "<group>"; };
 		7EF0C1182A70BE0C005C78F0 /* call.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = call.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EF0C11B2A70BE0C005C78F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EF0C11D2A70BE0C005C78F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +60,7 @@
 				7EC977B02A74247000F67AE3 /* FaceDetection in Frameworks */,
 				7EC977C32A74256B00F67AE3 /* AgoraBroadcastExtensionHelper in Frameworks */,
 				7EC977AC2A74247000F67AE3 /* ContentInspect in Frameworks */,
+				7E059DC82A852FF500088252 /* Drawsana in Frameworks */,
 				7EC977BA2A74247000F67AE3 /* VideoCodecDec in Frameworks */,
 				7EC977BE2A74247000F67AE3 /* VirtualBackground in Frameworks */,
 				7EC977A42A74247000F67AE3 /* AIAEC in Frameworks */,
@@ -93,6 +97,7 @@
 				7EF0C11B2A70BE0C005C78F0 /* AppDelegate.swift */,
 				7EF0C11D2A70BE0C005C78F0 /* SceneDelegate.swift */,
 				7EF0C11F2A70BE0C005C78F0 /* ViewController.swift */,
+				7E059DC92A85329300088252 /* DrawController.swift */,
 				7EF0C1212A70BE0C005C78F0 /* Main.storyboard */,
 				7EF0C1242A70BE0D005C78F0 /* Assets.xcassets */,
 				7EF0C1262A70BE0D005C78F0 /* LaunchScreen.storyboard */,
@@ -135,6 +140,7 @@
 				7EC977C02A74256B00F67AE3 /* AgoraAppGroupDataHelper */,
 				7EC977C22A74256B00F67AE3 /* AgoraBroadcastExtensionHelper */,
 				7EC977C42A74256B00F67AE3 /* AgoraUIKit */,
+				7E059DC72A852FF500088252 /* Drawsana */,
 			);
 			productName = call;
 			productReference = 7EF0C1182A70BE0C005C78F0 /* call.app */;
@@ -167,6 +173,7 @@
 			packageReferences = (
 				7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */,
 				7EC977BF2A74256B00F67AE3 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */,
+				7E059DC62A852FF500088252 /* XCRemoteSwiftPackageReference "Drawsana" */,
 			);
 			productRefGroup = 7EF0C1192A70BE0C005C78F0 /* Products */;
 			projectDirPath = "";
@@ -196,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EF0C1202A70BE0C005C78F0 /* ViewController.swift in Sources */,
+				7E059DCA2A85329300088252 /* DrawController.swift in Sources */,
 				7EF0C11C2A70BE0C005C78F0 /* AppDelegate.swift in Sources */,
 				7EF0C11E2A70BE0C005C78F0 /* SceneDelegate.swift in Sources */,
 			);
@@ -423,6 +431,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7E059DC62A852FF500088252 /* XCRemoteSwiftPackageReference "Drawsana" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Asana/Drawsana";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.12.0;
+			};
+		};
 		7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AgoraIO/AgoraRtcEngine_iOS.git";
@@ -442,6 +458,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7E059DC72A852FF500088252 /* Drawsana */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E059DC62A852FF500088252 /* XCRemoteSwiftPackageReference "Drawsana" */;
+			productName = Drawsana;
+		};
 		7EC977A32A74247000F67AE3 /* AIAEC */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7EC977A22A74247000F67AE3 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
