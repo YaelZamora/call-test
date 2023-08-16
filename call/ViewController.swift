@@ -5,18 +5,11 @@
 //  Created by Yael Javier Zamora Moreno on 25/07/23.
 //
 
-import UIKit
 import AVFoundation
+import UIKit
 import AgoraRtcKit
-import Drawsana
 
-class ViewController: UIViewController, AgoraRtcEngineDelegate {
-    // The video feed for the local user is displayed here
-    var localView: UIView!
-    // The video feed for the remote user is displayed here
-    var remoteView: UIView!
-    // Click to join or leave a call
-    var joinButton: UIButton!
+class ViewController: UIViewController{
     
     // The main entry point for Video SDK
     var agoraEngine: AgoraRtcEngineKit!
@@ -26,53 +19,28 @@ class ViewController: UIViewController, AgoraRtcEngineDelegate {
     // Update with the App ID of your project generated on Agora Console.
     let appID = "eaa38390cf1e4cd1abe91ee18a453250"
     // Update with the temporary token generated in Agora Console.
-    var token = "007eJxTYHjxesY6w/2is/dv7L6SNtup6vD1BXfV6ufMm/fI/kEGe/NZBYbUxERjC2NLg+Q0w1ST5BTDxKRUS8PUVEOLRBNTYyNTg6bcKykNgYwMXIwnmBkZIBDE52bwySxLdc5IzMtLzWFgAABYqyTl"
+    var token = "007eJxTYKh9uuRCTNRL5cNi0b+CM/pin/41vq507YXz4tTPhzLuByUpMKQmJhpbGFsaJKcZppokpxgmJqVaGqamGlokmpgaG5karHG6k9IQyMjAcPk7MyMDBIL43Aw+mWWpzhmJeXmpOQwMAEeYJX0="
     // Update with the channel name you used to generate the token in Agora Console.
     var channelName = "LiveChannel"
-    
-    // MARK: Drawsana constants
-    let drawsanaView = DrawsanaView()
-    let penTool = PenTool()
-    var imageView = UIImage()
 
+// The video feed for the local user is displayed here
+    var localView: UIView!
+    // The video feed for the remote user is displayed here
+    var remoteView: UIView!
+    // Click to join or leave a call
+    var joinButton: UIButton!
+    // Choose to be broadcaster or audience
+    var role: UISegmentedControl!
     // Track if the local user is in a call
-    var joined: Bool = false {
-        didSet {
-            DispatchQueue.main.async {
-                self.joinButton.setTitle( self.joined ? "Leave" : "Join", for: .normal)
-            }
-        }
-    }
+    var joined: Bool = false
 
     override func viewDidLoad() {
          super.viewDidLoad()
+         // Do any additional setup after loading the view.
          // Initializes the video view
          initViews()
          // The following functions are used when calling Agora APIs
          initializeAgoraEngine()
-        
-        //MARK: Drawsana settings
-        drawsanaView.set(tool: penTool)
-        drawsanaView.userSettings.strokeWidth = 5
-        drawsanaView.userSettings.strokeColor = .blue
-        drawsanaView.userSettings.fillColor = .yellow
-        drawsanaView.userSettings.fontSize = 24
-        drawsanaView.userSettings.fontName = "Marker Felt"
-        
-        //MARK: Drawsana Functions
-        func save() {
-            let jsonEncoder = JSONEncoder()
-            jsonEncoder.outputFormatting = [.prettyPrinted, .sortedKeys]
-            let jsonData = try! jsonEncoder.encode(drawsanaView.drawing)
-            // store jsonData somewhere
-          }
-         
-          func load() {}
-         
-          func showFinalImage() {
-              imageView = drawsanaView.render()!
-          }
-        //MARK: End of Drawsana Functions
     }
 
     override func viewDidDisappear(_ animated: Bool) {
@@ -80,7 +48,7 @@ class ViewController: UIViewController, AgoraRtcEngineDelegate {
         leaveChannel()
         DispatchQueue.global(qos: .userInitiated).async {AgoraRtcEngineKit.destroy()}
     }
-
+    
     func joinChannel() async {
         if await !self.checkForPermissions() {
             showMessage(title: "Error", text: "Permissions were not granted")
@@ -96,16 +64,14 @@ class ViewController: UIViewController, AgoraRtcEngineDelegate {
         } else {
             option.clientRoleType = .audience
         }
-
-        // For a video call scenario, set the channel profile as communication.
-        option.channelProfile = .communication
-
+        // For a live streaming scenario, set the channel profile as liveBroadcasting.
+        option.channelProfile = .liveBroadcasting
         // Join the channel with a temp token. Pass in your token and channel name here
         let result = agoraEngine.joinChannel(
             byToken: token, channelId: channelName, uid: 0, mediaOptions: option,
             joinSuccess: { (channel, uid, elapsed) in }
         )
-            // Check if joining the channel was successful and set joined Bool accordingly
+        // Check if joining the channel was successful and set joined Bool accordingly
         if result == 0 {
             joined = true
             showMessage(title: "Success", text: "Successfully joined the channel as \(self.userRole)")
@@ -118,7 +84,6 @@ class ViewController: UIViewController, AgoraRtcEngineDelegate {
         // Check if leaving the channel was successful and set joined Bool accordingly
         if result == 0 { joined = false }
     }
-
     
     func initializeAgoraEngine() {
         let config = AgoraRtcEngineConfig()
@@ -127,7 +92,7 @@ class ViewController: UIViewController, AgoraRtcEngineDelegate {
         // Use AgoraRtcEngineDelegate for the following delegate parameter.
         agoraEngine = AgoraRtcEngineKit.sharedEngine(with: config, delegate: self)
     }
-
+    
     func setupLocalVideo() {
         // Enable the video module
         agoraEngine.enableVideo()
@@ -140,7 +105,7 @@ class ViewController: UIViewController, AgoraRtcEngineDelegate {
         // Set the local video view
         agoraEngine.setupLocalVideo(videoCanvas)
     }
-
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         remoteView.frame = CGRect(x: 20, y: 50, width: 350, height: 330)
@@ -161,6 +126,13 @@ class ViewController: UIViewController, AgoraRtcEngineDelegate {
 
         joinButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         self.view.addSubview(joinButton)
+
+        // Selector to be the host or the audience
+        role = UISegmentedControl(items: ["Broadcast", "Audience"])
+        role.frame = CGRect(x: 20, y: 740, width: 350, height: 40)
+        role.selectedSegmentIndex = 0
+        role.addTarget(self, action: #selector(roleAction), for: .valueChanged)
+        self.view.addSubview(role)
     }
 
     @objc func buttonAction(sender: UIButton!) {
@@ -197,7 +169,7 @@ class ViewController: UIViewController, AgoraRtcEngineDelegate {
         @unknown default: return false
         }
     }
-    
+
     func showMessage(title: String, text: String, delay: Int = 2) -> Void {
         let deadlineTime = DispatchTime.now() + .seconds(delay)
         DispatchQueue.main.asyncAfter(deadline: deadlineTime, execute: {
@@ -208,9 +180,12 @@ class ViewController: UIViewController, AgoraRtcEngineDelegate {
     }
 
 
+    @objc func roleAction(sender: UISegmentedControl!) {
+        self.userRole = sender.selectedSegmentIndex == 0 ? .broadcaster : .audience
+    }
 }
 
-extension ViewController{
+extension ViewController: AgoraRtcEngineDelegate {
     // Callback called when a new host joins the channel
     func rtcEngine(_ engine: AgoraRtcEngineKit, didJoinedOfUid uid: UInt, elapsed: Int) {
         let videoCanvas = AgoraRtcVideoCanvas()
